@@ -7,7 +7,7 @@ import { Router, browserHistory, Route, IndexRoute } from 'react-router'
 import promise from 'redux-promise'
 import * as reducers from './reducers'
 import { App } from './components'
-import { PostsIndex } from './containers'
+import { PostsIndex, PostsNew } from './containers'
 
 
 const reducer = combineReducers(reducers)
@@ -23,6 +23,7 @@ const routes = (
   <Router history={ browserHistory }>
     <Route path="/" component={ App }>
       <IndexRoute component={ PostsIndex } />
+      <Route path="posts/new" component={ PostsNew }/>
     </Route>
   </Router>
 )

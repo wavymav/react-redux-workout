@@ -1,5 +1,3 @@
-export { PostsIndex } from './posts-index'
-
 import React, { Component } from 'react';
 
 export const App = ({ children }) => (

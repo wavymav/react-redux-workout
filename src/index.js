@@ -6,7 +6,8 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { Router, browserHistory, Route, IndexRoute } from 'react-router'
 import promise from 'redux-promise'
 import * as reducers from './reducers'
-import { App, PostsIndex } from './components'
+import { App } from './components'
+import { PostsIndex } from './containers'
 
 
 const reducer = combineReducers(reducers)
